@@ -23,7 +23,7 @@ const Page1 = () => {
       // console.log(process.env.REACT_APP_API_URL);
       // console.log('API URL:', apiUrl);  
       try {
-        const response = await axios.get(`${apiUrl}/api/services`);
+        const response = await axios.get(`${apiUrl}/services`);
         setServices(response.data);
       } catch (error) {
         console.error('Error fetching services:', error);
@@ -37,7 +37,7 @@ const Page1 = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${apiUrl}/api/services`, { name, amount });
+      const response = await axios.post(`${apiUrl}/services`, { name, amount });
       setServices([...services, response.data]); // Add the new service to the list
       alert('Service added successfully');
       setName('');
@@ -51,7 +51,7 @@ const Page1 = () => {
   // Handle delete service
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${apiUrl}/api/services/${id}`);
+      await axios.delete(`${apiUrl}/services/${id}`);
       setServices(services.filter(service => service._id !== id)); // Remove deleted service from the list
       alert('Service deleted successfully');
     } catch (error) {
@@ -67,7 +67,7 @@ const Page1 = () => {
     
     if (editedName && editedAmount) {
       try {
-        const response = await axios.put(`${apiUrl}/api/services/${id}`, {
+        const response = await axios.put(`${apiUrl}/services/${id}`, {
           name: editedName,
           amount: editedAmount,
         });

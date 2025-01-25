@@ -16,7 +16,7 @@ const Page2 = () => {
     const fetchServices = async () => {
       const apiUrl = process.env.REACT_APP_API_URL;
       try {
-        const result = await axios.get(`${apiUrl}/api/services`);
+        const result = await axios.get(`${apiUrl}/services`);
         setServices(result.data);
       } catch (error) {
         console.error('Error fetching services:', error);
@@ -29,7 +29,7 @@ const Page2 = () => {
     const fetchQuotations = async () => {
       const apiUrl = process.env.REACT_APP_API_URL;
       try {
-        const result = await axios.get(`${apiUrl}/api/quotations`);
+        const result = await axios.get(`${apiUrl}/quotations`);
         setQuotations(result.data);
       } catch (error) {
         console.error('Error fetching quotations:', error);
@@ -49,7 +49,7 @@ const Page2 = () => {
       };
 
       try {
-        await axios.post(`${apiUrl}/api/quotations`, newQuotation);
+        await axios.post(`${apiUrl}/quotations`, newQuotation);
         setQuotations([...quotations, newQuotation]);
       } catch (error) {
         console.error('Error saving quotation:', error);
@@ -59,7 +59,7 @@ const Page2 = () => {
 
   const handleDeleteQuotation = async (id) => {
     try {
-      await axios.delete(`${apiUrl}/api/quotations/${id}`);
+      await axios.delete(`${apiUrl}/quotations/${id}`);
       setQuotations(quotations.filter((item) => item._id !== id));
     } catch (error) {
       console.error('Error deleting quotation:', error);
@@ -91,7 +91,7 @@ const Page2 = () => {
 
     try {
       // Update the backend
-      const response = await axios.put(`${apiUrl}/api/quotations/${editingQuotation._id}`, updatedQuotation);
+      const response = await axios.put(`${apiUrl}/quotations/${editingQuotation._id}`, updatedQuotation);
 
       console.log('Update response:', response.data);
 
