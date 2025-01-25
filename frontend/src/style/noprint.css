@@ -1,0 +1,118 @@
+
+ 
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      
+      } 
+      .top_content,.disclaimer,.sr{
+        display: none;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 8px;
+      }
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      caption {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .header h2{
+      padding: 5px 5px;
+      background-color: green;
+      color: white;
+    }
+    .header h2{
+    
+    background-color: green;
+    
+    }
+    .seller_details ul{
+     list-style: none;
+     font-size: 12px;
+     font-weight: 600;
+     letter-spacing: 0px;
+     line-height: 14px;
+     color: #5e5c5c;
+    }
+    .seller_details p{
+     font-size: 19px;
+      font-weight: 600;
+      padding: 5px 0;
+    }
+    .seller {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 8px;
+    }
+    .selerr_logo img{
+     width: 100%;
+     height: 100%;
+    }
+    .seller_details ul{
+     list-style: none;
+     font-size: 12px;
+     font-weight: 600;
+     letter-spacing: 0px;
+     line-height: 14px;
+     color: #5e5c5c;
+     padding: 0;
+    }
+    .top_contetn{
+      border: 1px solid #ddd;
+      border-bottom: none;
+    
+    }
+    .head_tb{
+      border: 1px solid #ddd;
+      border-bottom: none;
+    
+    }
+    .header h2 {
+      margin: 0;
+    }
+    .disclaimer li {
+      font-size: 12px;
+    }.disclaimer>div ul {
+      display: flex
+    ;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+    .disclaimer{
+      padding: 10px;
+      border: 1px solid #ddd;
+    margin-top: 5px;
+    }
+    .web_link{
+      font-size: 14px;
+       
+    }
+    
+      .top_contetn{
+      border: 1px solid #ddd;
+      border-bottom: none;
+    
+    }
+    .head_tb{
+      border: 1px solid #ddd;
+      border-bottom: none;
+    
+    }
+ 
