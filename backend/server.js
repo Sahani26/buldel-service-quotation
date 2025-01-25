@@ -17,9 +17,9 @@ app.use(cors({
 connectDB();
 
 // Routes
-app.use('/api', serviceRoutes);
+app.use('/', serviceRoutes);
  
-app.use('/api/quotations', quotationRoutes);
+app.use('/quotations', quotationRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5000;
