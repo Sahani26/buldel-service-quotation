@@ -3,13 +3,16 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const serviceRoutes = require('./routes/serviceRoutes');
 const quotationRoutes = require('./routes/quotationRoutes');
+require('dotenv').config();
 
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
-
+// app.use(cors());
+app.use(cors({
+  origin: `${process.env.FRONT}`
+}));
 // Connect to DB
 connectDB();
 
