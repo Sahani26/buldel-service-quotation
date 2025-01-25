@@ -3,6 +3,10 @@ const { createService, getAllServices,updateService, deleteService } = require('
 
 const router = express.Router();
 
+// GET route to test home link
+router.get('/', (req, res) => {
+    res.send('Welcome to the Service Quotation System API!');
+  });
 // POST route to create service
 router.post('/services', createService);
 
