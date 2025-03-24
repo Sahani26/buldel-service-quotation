@@ -39,7 +39,7 @@ const Page1 = () => {
     try {
       const response = await axios.post(`${apiUrl}/services`, { name, amount });
       setServices([...services, response.data]); // Add the new service to the list
-      alert('Service added successfully');
+    
       setName('');
       setAmount('');
     } catch (error) {

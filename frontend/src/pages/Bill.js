@@ -149,7 +149,7 @@ const Bill = () => {
     <option value="">Select Service</option>
     {filteredServices.map((service) => (
       <option key={service._id} value={service._id}>
-        {service.name} - ${service.amount}
+        {service.name} - ₹{service.amount}
       </option>
     ))}
   </select>
@@ -236,7 +236,7 @@ const Bill = () => {
             item.quantity
           )}
         </td>
-        <td>${item.total}</td>
+        <td>₹{item.total}</td>
         <td className="action">
           {editingQuotation && editingQuotation._id === item._id ? (
             <button className="save-btn" onClick={handleSaveEdit}>

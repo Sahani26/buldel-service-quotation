@@ -127,6 +127,10 @@
     margin-left: 0;
     margin-top: 5px;
   }
+  .header ul{
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -272,6 +276,11 @@ margin-bottom: 10px;
   .quotation-table {
     font-size: 0.9rem;
   }
+  .Billbt.d-flex.mx-3 {
+    display: flex
+;
+    column-gap: 10px;
+}
 
   .edit-btn,
   .delete-btn,
@@ -296,7 +305,7 @@ margin-bottom: 10px;
   }
 
   .add-btn,.print-btn {
-    padding: 15px;
+    padding: 10px;
   }
 
   .quotation-table {
