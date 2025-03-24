@@ -192,11 +192,11 @@ const Bill = () => {
               <li>Adagara Street, </li>
               <li>Near Nanpura Police Station</li>
               <li>Nanpura-395001, Surat.</li>
-              <li>Phone: 9428213314 </li>
-              <li>daren#gmail.com | www.google.com</li>
-              <li>
+              <li>Phone: +91-9428213314 </li>
+              <li>service@buldel.com</li>
+              {/* <li>
                 GSTIN-22AAA000051W#R | STATE CODE-24 | PAN-FRUKS3398S
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="seller_logo">
@@ -211,9 +211,9 @@ const Bill = () => {
       <table className="quotation-table">
   <thead>
     <tr>
-      <th className='sr'>Sr.</th> {/* Serial Number Column */}
+      <th className='sr'>Sr#</th> {/* Serial Number Column */}
       <th>Service Name</th>
-      <th>Quantity</th>
+      <th>Qty/Mt/Nug</th>
       <th>Total</th>
       <th className="action">Actions</th>
     </tr>
@@ -262,7 +262,16 @@ const Bill = () => {
       </tr>
     ))}
   </tbody>
+  <tfoot>
+    <tr>
+      <td colSpan="3" className="text-right"><strong>Subtotal:</strong></td>
+      <td><strong>₹{quotations.reduce((acc, item) => acc + item.total, 0)}</strong></td>
+ 
+    </tr>
+  </tfoot>
 </table>
+
+
 
       <div className="disclaimer">
         <div className="material_use">
