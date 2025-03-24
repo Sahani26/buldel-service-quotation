@@ -16,6 +16,9 @@ function Header() {
           <li>
             <Link to="/page2"  >Generate-Quotation</Link>
           </li>
+          <li>
+            <Link to="/page3"  >Generate-Bill</Link>
+          </li>
         </ul>
     
    </div>
