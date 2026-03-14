@@ -193,10 +193,7 @@ const Page2 = () => {
               <li>Near Nanpura Police Station</li>
               <li>Nanpura-395001, Surat.</li>
               <li>Phone: 9428213314 </li>
-              <li>daren#gmail.com | www.google.com</li>
-              <li>
-                GSTIN-22AAA000051W#R | STATE CODE-24 | PAN-FRUKS3398S
-              </li>
+              <li>service@buldel.com | www.buldel.com</li>
             </ul>
           </div>
           <div className="seller_logo">
