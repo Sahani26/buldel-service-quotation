@@ -2,14 +2,20 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://sunilsahani484:pwro6bfetM15eKf9@cluster0.x2iz2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log('MongoDB connected');
+
+    console.log("Connecting to MongoDB...");
+
+    await mongoose.connect(
+      "mongodb+srv://sunilsahani484_db_user:Vc2HaWaXM0wOF91A@cluster0.khtfqfl.mongodb.net/buldel-service-bill?retryWrites=true&w=majority"
+    );
+
+    console.log("MongoDB connected successfully");
+
   } catch (error) {
-    console.error('Error connecting to MongoDB:', error.message);
-    process.exit(1); // Exit if MongoDB connection fails
+
+    console.error("Error connecting to MongoDB:", error.message);
+
+    process.exit(1);
   }
 };
 

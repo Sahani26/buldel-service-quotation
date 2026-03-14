@@ -3,8 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const serviceRoutes = require('./routes/serviceRoutes');
 const quotationRoutes = require('./routes/quotationRoutes');
-require('dotenv').config();
-
+require('dotenv').config(); 
 const app = express();
 
 // Middleware
@@ -19,7 +18,7 @@ app.use(cors());
 // connectDB();
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://sunilsahani484:pwro6bfetM15eKf9@cluster0.x2iz2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+    await mongoose.connect('mongodb+srv://sunilsahani484_db_user:Vc2HaWaXM0wOF91A@cluster0.khtfqfl.mongodb.net/?appName=Cluster0', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
