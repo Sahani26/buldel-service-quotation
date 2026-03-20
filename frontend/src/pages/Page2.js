@@ -210,7 +210,9 @@ const Page2 = () => {
     <tr>
       <th className='sr'>Sr.</th> {/* Serial Number Column */}
       <th>Service Name</th>
+       <th>Per Unit Rate</th> {/* ✅ Added */}
       <th>Quantity</th>
+      
       <th>Total</th>
       <th className="action">Actions</th>
     </tr>
@@ -220,6 +222,8 @@ const Page2 = () => {
       <tr key={item._id}>
         <td className='sr'>{index + 1}</td> {/* Serial Number */}
         <td>{item.serviceName}</td>
+                {/* ✅ FIXED */}
+                <td>₹{item.serviceAmount ?? 0}</td>
         <td>
           {editingQuotation && editingQuotation._id === item._id ? (
             <input

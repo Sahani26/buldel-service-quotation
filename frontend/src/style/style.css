@@ -118,6 +118,9 @@
     flex-direction: row;
     align-items: flex-start;
     align-items: center;
+            flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
   }
 
    
