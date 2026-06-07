@@ -211,7 +211,7 @@ const Page2 = () => {
       <th className='sr'>Sr.</th> {/* Serial Number Column */}
       <th>Service Name</th>
        <th>Per Unit Rate</th> {/* ✅ Added */}
-      <th>Quantity</th>
+      <th>meter/nug/qty</th>
       
       <th>Total</th>
       <th className="action">Actions</th>
@@ -269,6 +269,7 @@ const Page2 = () => {
         <div className="material_use">
           <strong>Material Uses</strong>
           <ul>
+     <li>Wire Details (Length in Meter / Number of Runs / Quantity)</li>
             <li>Wire: R.R., Polycab, Finolex, KEI</li>
             <li>Cable: R.R., Polycab, Finolex, KEI</li>
             <li>Telephone Cable: Finolex, Polycab, Delton, R.R</li>
